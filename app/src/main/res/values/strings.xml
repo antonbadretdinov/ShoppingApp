@@ -4,5 +4,7 @@
     <string name="mainPage">Главная</string>
     <string name="BuyTV">Корзина</string>
     <string name="Title">Наши товары</string>
+    <string name="itemimg">itemImg</string>
+    <string name="button_str">+</string>
 
 </resources>

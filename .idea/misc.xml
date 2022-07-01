@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_cap.xml" value="0.32" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_glasses.xml" value="0.2135" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_gloves.xml" value="0.2135" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32" />
         <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_logo.xml" value="0.32" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/drawable/ic_plus_button.xml" value="0.32" />
         <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/layout/item.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.32" />
+        <entry key="..\:/AndroidStudioProjects/ShoppingApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.32" />
       </map>
     </option>
   </component>

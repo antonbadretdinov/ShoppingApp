@@ -5,6 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 import com.example.shoppingapp.adapter.ItemAdapter;
@@ -21,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         List<Item> itemList = new ArrayList<>();
         itemList.add(new Item(1,"cap","Кепка","1099 руб"));
         itemList.add(new Item(2,"gloves","Перчатки","799 руб"));
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setItemRecycler(itemList);
     }
 
-    private void setItemRecycler(List<Item> itemList) {
+    private void setItemRecycler(List<Item>  itemList) {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
 
         itemsRecycler = findViewById(R.id.itemsRecycler);

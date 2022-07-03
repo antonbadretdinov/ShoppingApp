@@ -52,15 +52,15 @@
             android:textSize="30sp" />
 
         <Button
-            app:backgroundTint="@color/white"
+            app:backgroundTint="@color/btnColor"
             android:id="@+id/plusButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="105dp"
-            android:layout_marginVertical="5dp"
+            android:layout_marginVertical="10dp"
             android:background="@drawable/rounded_btn"
-            android:text="+"
-            android:textColor="@color/black"
+            android:text="@string/plus_btn"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

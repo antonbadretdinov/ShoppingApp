@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List<Item> itemList = new ArrayList<>();
-        itemList.add(new Item(1,"cap","Кепка","1099 руб"));
-        itemList.add(new Item(2,"gloves","Перчатки","799 руб"));
-        itemList.add(new Item(3,"glasses","Очки","2499 руб"));
+        itemList.add(new Item(1,"cap","Кепка","1099 руб",getString(R.string.item_description)));
+        itemList.add(new Item(2,"gloves","Перчатки","799 руб",getString(R.string.item_description)));
+        itemList.add(new Item(3,"glasses","Очки","2499 руб",getString(R.string.item_description)));
 
         setItemRecycler(itemList);
     }

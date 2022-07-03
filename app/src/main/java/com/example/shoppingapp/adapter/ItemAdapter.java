@@ -1,6 +1,7 @@
 package com.example.shoppingapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.shoppingapp.ItemPage;
 import com.example.shoppingapp.R;
 import com.example.shoppingapp.model.Item;
 
@@ -41,6 +43,20 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
         holder.itemTitle.setText(items.get(position).getTitle());
         holder.itemPrice.setText(items.get(position).getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ItemPage.class);
+
+                intent.putExtra("itemImage",imageId);
+                intent.putExtra("itemTitle",items.get(position).getTitle());
+                intent.putExtra("itemPrice",items.get(position).getPrice());
+                intent.putExtra("itemText",items.get(position).getText());
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

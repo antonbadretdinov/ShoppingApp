@@ -3,13 +3,22 @@ package com.example.shoppingapp.model;
 public class Item {
 
     int id;
-    String img, title, price;
+    String img, title, price, text;
 
-    public Item(int id, String img, String title, String price) {
+    public Item(int id, String img, String title, String price,String text) {
         this.id = id;
         this.img = img;
         this.title = title;
         this.price = price;
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public int getId() {

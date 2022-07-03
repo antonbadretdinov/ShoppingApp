@@ -2,15 +2,24 @@ package com.example.shoppingapp.model;
 
 public class Item {
 
-    int id;
+    int id,category;
     String img, title, price, text;
 
-    public Item(int id, String img, String title, String price,String text) {
+    public Item(int id, String img, String title, String price,String text,int category) {
         this.id = id;
         this.img = img;
         this.title = title;
         this.price = price;
         this.text = text;
+        this.category = category;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public String getText() {

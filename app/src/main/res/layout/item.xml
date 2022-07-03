@@ -27,6 +27,7 @@
             android:paddingTop="40dp"
             android:paddingEnd="40dp"
             android:paddingBottom="0dp"
+            android:transitionName="imageAnimation"
             app:srcCompat="@drawable/ic_cap" />
 
         <TextView

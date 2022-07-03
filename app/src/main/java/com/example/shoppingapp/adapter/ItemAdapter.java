@@ -1,8 +1,12 @@
 package com.example.shoppingapp.adapter;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.text.Layout;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +40,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {//установка значений в дизайн
+    public void onBindViewHolder(@NonNull ItemViewHolder holder, @SuppressLint("RecyclerView") int position) {//установка значений в дизайн
 
         int imageId = context.getResources().getIdentifier("ic_"+ items.get(position).getImg(), "drawable",context.getPackageName());//из названия получаем id картинки
         holder.itemImage.setImageResource(imageId);
@@ -54,7 +58,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
                 intent.putExtra("itemPrice",items.get(position).getPrice());
                 intent.putExtra("itemText",items.get(position).getText());
 
-                context.startActivity(intent);
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
+                        (Activity) context,
+                        new Pair<View,String>(holder.itemImage,"imageAnimation")
+                );
+
+                context.startActivity(intent,options.toBundle());
             }
         });
     }

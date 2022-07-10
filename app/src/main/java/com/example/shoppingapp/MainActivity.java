@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -67,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void openOrderPage(View view){
+        Intent intent = new Intent(this, OrderPage.class);
+        startActivity(intent);
+    }
+
     private void setCategoryRecycler(List<Category> categoryList) {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false);
 
@@ -77,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         categoryRecycler.setAdapter(categoryAdapter);
     }
 
-    private void setItemRecycler(List<Item>  itemList) {
+    private void setItemRecycler(List<Item> itemList) {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
 
         itemsRecycler = findViewById(R.id.itemsRecycler);

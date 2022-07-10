@@ -57,6 +57,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
                 intent.putExtra("itemTitle",items.get(position).getTitle());
                 intent.putExtra("itemPrice",items.get(position).getPrice());
                 intent.putExtra("itemText",items.get(position).getText());
+                intent.putExtra("itemId",items.get(position).getId());
+
 
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
                         (Activity) context,
